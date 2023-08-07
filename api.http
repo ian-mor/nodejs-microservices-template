@@ -57,7 +57,7 @@ PUT {{gateway_host}}/api/settings
 content-type: application/json
 x-ms-client-principal: {{client_principal}}
 
-{ "sides": 8 }
+{ "sides": 24 }
 
 ###
 
@@ -66,10 +66,10 @@ POST {{gateway_host}}/api/rolls
 content-type: application/json
 x-ms-client-principal: {{client_principal}}
 
-{ "count": 10 }
+{ "count": 25 }
 
 ###
 
 # Get roll history
-GET {{gateway_host}}/api/rolls/history?max=10
+GET {{gateway_host}}/api/rolls/history?max=25
 x-ms-client-principal: {{client_principal}}
